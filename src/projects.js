@@ -16,6 +16,14 @@ export const projects=[
             weblink:"https://wondrous-quokka-914331.netlify.app/"
         },
         {
+            maincategory:"_",
+            subcategory:"React",
+            title:"Persnol Portfolio",
+            description:"Designing Persnol Portfolio with react and deploying it with continues features updates ",
+            gitlink:"https://github.com/SPARSHpathak2002/MyPortfolio",
+            weblink:"https://persnolportfolio.netlify.app/"
+        },
+        {
             maincategory:"react",
             subcategory:"React",
             title:"Shopping Cart API",
