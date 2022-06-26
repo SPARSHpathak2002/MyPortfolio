@@ -26,6 +26,14 @@ export const projects=[
         {
             maincategory:"react",
             subcategory:"React",
+            title:"Persnol Portfolio",
+            description:"Designing Persnol Portfolio with react and deploying it with continues features updates ",
+            gitlink:"https://github.com/SPARSHpathak2002/MyPortfolio",
+            weblink:"https://persnolportfolio.netlify.app/"
+        },
+        {
+            maincategory:"react",
+            subcategory:"React",
             title:"Shopping Cart API",
             description:"This is a basic shopping cart application created as part of practice for react,redux and API's in React.js . As a part of Items  'Memes' are used which a user can buy",
             gitlink:"https://github.com/SPARSHpathak2002/React_mini_projects/tree/main/Shopping_cart",
