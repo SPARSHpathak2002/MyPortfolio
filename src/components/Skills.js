@@ -6,7 +6,7 @@ const Skills=()=>{
 
 
     return(
-        <div className="skills  p-5 mt-5 mb-4 rounded-3">
+        <div id='Skills' className="skills  p-5 mt-5 mb-4 rounded-3">
            <h1 style={{textAlign:'center'}}>Skills</h1>
            <br/>
            <div className="container-fluid">

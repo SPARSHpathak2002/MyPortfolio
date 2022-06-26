@@ -4,7 +4,7 @@ import {FaInstagramSquare,FaLinkedin,FaGithubSquare} from "react-icons/fa"
 
 const Contact = () => {
     return (
-        <div className="contactme  p-5 mt-5 mb-4 rounded-3">
+        <div  id="Connect" className="contactme  p-5 mt-5 mb-4 rounded-3">
             <h1>Connect with me</h1>
             <Row>
                 <Col>
