@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React,{createContext,useReducer} from "react";
+import MyNavbar from "./components/Navbar";
+import Intro from "./components/Intro";
+import Aboutme from "./components/Aboutme";
+import Skills from "./components/Skills"
+import Projects from "./components/Projectlist";
 
-function App() {
+
+import { FilterReducer } from "./reducer";
+
+import 'bootstrap/dist/css/bootstrap.min.css'
+import "./App.css"
+import Contact from "./components/contact";
+import Footer from "./components/footer";
+const App = () =>{
+  const FilterContext=createContext();
+  const [data,dispatch]=useReducer(FilterReducer);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+    <div className=" container py-4">
+    <MyNavbar/>
+    <Intro/>
+    <Aboutme/>
+    <Skills/>
+    <FilterContext.Provider value={{data,dispatch}}>
+    <Projects/>
+    </FilterContext.Provider>
+    <Contact/>
+    <Footer/>
 
-export default App;
+    </div>
+  )
+}
+export default App

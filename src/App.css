@@ -1,38 +1,167 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+body{
+    font-family: 'Roboto Slab', serif;
+    background-image: url('./media/images/vintage-wallpaper.webp');
+    background-color: #293462;
+    color: whitesmoke;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.toggler{
+    font-weight: bolder;
+    font-size: 32px;
+    color: #F7D716 !important;
+    border: 2px solid #F7D716 !important;
+    border-radius: 25px;
+    margin-right: 20px !important;
+    margin-top: 20px !important;
+}
+.canvas-header{
+    color: #F7D716 !important;
+    background-color: #F7D716;
+}
+.n-l{
+    background-color: #293462;
+    color:#F7D716;
+    text-decoration: none;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: auto;
+}
+.n-l:hover {
+    color: whitesmoke;
+    text-decoration:underline whitesmoke ;
+}
+.n-l > .active {
+    color: whitesmoke;
+    text-decoration:underline whitesmoke ;
+}
+.Intro-box{
+    background-color: #293462;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    border:5px solid black;
+    border-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3Cstyle%3Epath%7Banimation:stroke 5s infinite linear%3B%7D%40keyframes stroke%7Bto%7Bstroke-dashoffset:776%3B%7D%7D%3C/style%3E%3ClinearGradient id='g' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23ffb961' /%3E%3Cstop offset='25%25' stop-color='%23c05c7e' /%3E%3Cstop offset='50%25' stop-color='%23f3826f' /%3E%3Cstop offset='100%25' stop-color='%23ffb961' /%3E%3C/linearGradient%3E %3Cpath d='M1.5 1.5 l97 0l0 97l-97 0 l0 -97' stroke-linecap='square' stroke='url(%23g)' stroke-width='3' stroke-dasharray='388'/%3E %3C/svg%3E") 1;
+}
+.Intro-box h1{
+    font-size:64px;
+    color: whitesmoke;
+}
+.Intro-box p{
+    font-size:28px;
+    color: whitesmoke;
+}
+.Intro-box img{
+    height:500px;
+    border: 5px solid whitesmoke;
+    max-width: 450px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.About-me{
+    display: flex;
+    color: whitesmoke;
+    font-size: 20px;
+}
+.About-me img{
+    width:500px;
+    height:500px;
+}
+
+.skills ,.contactme{
+    font-size: 20px;
+    background-color: #293462;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+.s-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border :2px solid whitesmoke;
+    width: 90px;
+    padding-top: 12px;
+    margin: auto;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    
+}
+
+.p-c{
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.07);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(9.8px);
+-webkit-backdrop-filter: blur(9.8px);
+border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.dropdown{
+    width: 50% !important;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.social-media-links{
+    text-decoration: none;
+    color:whitesmoke;
+    padding: 0px 10px;
+}
+.social-media-links :hover{
+    text-decoration: none;
+    color:#F7D716;
+}
+.m-l{
+    font-size: 35px;
+}
+.footer {
+    padding-top: 20px;
+}
+@media only screen and (max-width: 600px) {
+    
+    .Intro-box{
+        background-color: #293462;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+        display: flex;
+        flex-direction: column-reverse;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    
   }
+  .Intro-box h1{
+    font-size:60px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Intro-box p{
+    font-size:24px;
 }
-
-.App-link {
-  color: #61dafb;
+  .Intro-box img{
+    height:290px;
+    width: 250px;
+    border: 5px solid whitesmoke;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.About-me{
+    display: flex;
+    flex-direction: column-reverse;
+    color: whitesmoke;
+    font-size: 20px;
+    padding-left:0px !important;
+    padding-right:0px !important;
+}
+.About-me > div:nth-child(2){
+    padding-left: 0px !important;
+}
+.abt-img{
+    text-align: center;
+}
+.About-me img{
+    width:260px;
+    height:260px;
+}
+.dropdown{
+    width: 90% !important;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 }
