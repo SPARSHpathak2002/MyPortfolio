@@ -1,33 +1,46 @@
-import React,{createContext,useReducer} from "react";
+import React from "react";
 import MyNavbar from "./components/Navbar";
 import Intro from "./components/Intro";
 import Aboutme from "./components/Aboutme";
 import Skills from "./components/Skills"
-import Projects from "./components/Projectlist";
+import Contact from "./components/contact";
+import Footer from "./components/footer";
+import ProjectWrapper from "./components/ProjectWrapper";
+//react router dom 
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-
-import { FilterReducer } from "./reducer";
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 import "./App.css"
-import Contact from "./components/contact";
-import Footer from "./components/footer";
+
+
 const App = () =>{
-  const FilterContext=createContext();
-  const [data,dispatch]=useReducer(FilterReducer);
+  // return (
+  //   <div className=" container py-4">
+  //   <MyNavbar/>
+  //   <Intro/>
+  //   <Aboutme/>
+  //   <Skills/>
+  //   <FilterContext.Provider value={{data,dispatch}}>
+  //   <Projects/>
+  //   </FilterContext.Provider>
+  //   <Contact/>
+  //   <Footer/>
 
-  return (
+  //   </div>
+  // )
+
+  return(
     <div className=" container py-4">
-    <MyNavbar/>
-    <Intro/>
-    <Aboutme/>
-    <Skills/>
-    <FilterContext.Provider value={{data,dispatch}}>
-    <Projects/>
-    </FilterContext.Provider>
-    <Contact/>
-    <Footer/>
-
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Intro/>}/>
+      <Route path="/aboutme" element={<Aboutme/>}/>
+      <Route path="/skills" element={<Skills/>}/>
+      <Route path="/projects" element={<ProjectWrapper/>}/>
+      <Route path="/contact" element={<Contact/>}/>
+    </Routes>
+    </BrowserRouter>
     </div>
   )
 }

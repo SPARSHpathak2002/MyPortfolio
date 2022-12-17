@@ -1,7 +1,7 @@
 import { Card } from "react-bootstrap"
 const ProjectCard = (props) => {
     return (
-        <Card className='p-c m-2'style={{ width: '20rem' }} >
+        <Card className='p-c m-2 pro-card'style={{ width: '20rem' }} >
             <Card.Body>
                 <Card.Title style={{color:'white'}}>{props.title}</Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">category :&nbsp;{props.cat} </Card.Subtitle>
