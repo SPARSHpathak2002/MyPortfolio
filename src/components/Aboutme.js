@@ -51,7 +51,7 @@ const Aboutme = () => {
                     </div>
                 </h1>
                 <p>
-                    My name is Sparsh Jayrajkumar Pathak , I am a Third year college student pursuing <i style={{color:'#80C0C0'}}><strong>Bachelor of Technology (BTech)&nbsp;&nbsp;</strong></i> in
+                    My name is Sparsh Pathak , I am a Third year college student pursuing <i style={{color:'#80C0C0'}}><strong>Bachelor of Technology (BTech)&nbsp;&nbsp;</strong></i> in
                     <i style={{color:'#80C0C0'}}><strong> Computer Science and Engineering </strong></i>
         
                 </p>
